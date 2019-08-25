@@ -23,6 +23,24 @@
 
 <body>
 
+    {{!-- navbar & header --}}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/articles">
+            <h2>MONGO SCRAPER</h2>
+        </a>
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/articles">HOME</a>
+            <a class="nav-item nav-link active" href="/saved">SAVED ARTICLES</a>
+        </div>
+        <button type="button" class="btn btn-info" id="scrapeBtn">NEW ARTICLES</button>
+        <button type="button" class="btn btn-info" id="clearBtn">CLEAR ARTICLES</button>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <h1 class="text-center text-light">MONGO SCRAPER</h1>
+        <h3 class="text-center text-light">ALT PRESS EDITION</h3>
+    </div>
+
     {{body}}
 
     {{!-- jQuery cdn --}}
